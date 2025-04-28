@@ -1,19 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/** @format */
+
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import Itinierary from "./components/Itinierary";
+import OurStory from "./components/OurStory";
+import Registry from "./components/Registry";
+import Rsvp from "./components/Rsvp";
+import VenueInfo from "./components/VenueInfo";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-         Caleb & Amaya
-      </div>
-       
+      <Header />
+      <HeroSection />
+      <OurStory />
+      <VenueInfo />
+      <Itinierary />
+      <Registry />
+      <Rsvp />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
