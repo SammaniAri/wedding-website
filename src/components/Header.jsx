@@ -15,7 +15,6 @@ const Header = () => {
         <a href="#itinierary">Itinierary</a>
         <a href="#registry">Registry</a>
         <a href="#rsvp">RSVP</a>
-        <a href="#footer">Footer</a>
       </div>
     </div>
   );

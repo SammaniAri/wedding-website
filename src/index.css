@@ -16,11 +16,16 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
   background-color: var(--color-background);
   color: var(--color-text);
   line-height: 1.6;
   min-height: 100vh;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 4rem; 
 }
 
 /* Root Container */
@@ -34,6 +39,7 @@ body {
 .header {
   width: 100%;
   padding: 1rem 2rem;
+  font-size: 1.5rem; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,4 +73,20 @@ body {
 
 .section{
   height: 600px;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  padding: 6rem;  
+}
+.subheading{
+  color: var(--color-accent);
+  font-size: 1.5rem; 
 }
