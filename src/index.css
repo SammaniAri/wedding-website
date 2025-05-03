@@ -22,7 +22,7 @@ html,body {
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  font-size: 4rem; 
+  font-size: 6rem; 
 }
 
 .section{
@@ -97,7 +97,7 @@ padding: 8rem;
 .our-story-title{
   width: 30%;
   font-weight: 600;
-  font-size: 4rem; 
+  font-size: 6rem; 
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -113,4 +113,28 @@ padding: 8rem;
  height: 1000px;
  width: 100%;
  object-fit: cover;
+}
+
+/* venue info section Styles */
+#venue{
+width: 100%;
+display: flex;
+padding: 8rem;
+}
+.venue-text{
+  width: 50%; 
+  font-size: 1.5rem; 
+}
+.venue-carousel{
+  width: 50%; 
+}
+.venue-text p{
+padding: 0.5rem;
+}
+.venue-title{
+  font-weight: 400;
+  font-size: 4rem; 
+}
+.venue-section-name{
+ color: var(--color-accent); 
 }
