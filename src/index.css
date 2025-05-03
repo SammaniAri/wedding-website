@@ -6,16 +6,13 @@
 }
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-body {
+html,body {
   font-family: 'Playfair Display', serif;
   background-color: var(--color-background);
   color: var(--color-text);
@@ -28,13 +25,9 @@ h1 {
   font-size: 4rem; 
 }
 
-/* Root Container */
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.section{
+  height: 1000px;
 }
-
 /* Header Styles */
 .header {
   width: 100%;
@@ -71,12 +64,14 @@ h1 {
   color: var(--color-accent);
 }
 
-.section{
-  height: 600px;
-}
+/* Hero section styles */
 .hero-image {
-  width: 100%;
+  width: 50%;
   height: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 8rem;
+  
 }
 .hero-text{
   display: flex;
@@ -86,7 +81,31 @@ h1 {
   text-align: center; 
   padding: 6rem;  
 }
-.subheading{
+.hero-text p{
   color: var(--color-accent);
   font-size: 1.5rem; 
+}
+
+/* Our story section Styles */
+#our-story{
+width: 100%;
+background-color: var(--color-accent);  
+color: var(--color-background);
+display: flex;
+padding: 8rem;
+}
+.our-story-title{
+  width: 30%;
+  font-weight: 600;
+  font-size: 4rem; 
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.our-story-text{
+  width: 70%;
+  font-size: 1.5rem; 
+}
+.our-story-text p{
+ padding: 1rem
 }
