@@ -1,7 +1,10 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
+import Carousel from "./Carousel";
 
 const VenueInfo = () => {
-	return (
+  return (
     <div
       id="venue"
       className="section"
@@ -17,9 +20,11 @@ const VenueInfo = () => {
         <p>4750 Tyler Avenue</p>
         <p>Boise, Idaho 83705</p>
       </div>
-      <div className="venue-carousel"></div>
+      <div className="venue-carousel">
+        <Carousel />
+      </div>
     </div>
   );
-}
+};
 
-export default VenueInfo
+export default VenueInfo;

@@ -127,6 +127,7 @@ padding: 8rem;
 }
 .venue-carousel{
   width: 50%; 
+  padding:4rem;
 }
 .venue-text p{
 padding: 0.5rem;
@@ -137,4 +138,18 @@ padding: 0.5rem;
 }
 .venue-section-name{
  color: var(--color-accent); 
+}
+
+.carousel-stack {
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+}
+
+.carousel-img {
+  position: absolute;
+  height: auto;
+  width:90%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
