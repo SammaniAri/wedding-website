@@ -12,10 +12,13 @@ const Carousel = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "-100px" });
   const rotations = [4, -6, -2];
-  const zIndexes = [1, 2, 3];
 
   const rotateStack = () => {
-    setImageOrder((prev) => [prev[1], prev[2], prev[0]]);
+    setImageOrder((currentOrder) => [
+      currentOrder[1],
+      currentOrder[2],
+      currentOrder[0],
+    ]);
   };
   return (
     <div
@@ -48,7 +51,7 @@ const Carousel = () => {
             whileTap={index === 2 ? { scale: 0.95 } : {}}
             onClick={index === 2 ? rotateStack : undefined}
             style={{
-              zIndex: zIndexes[index],
+              zIndex: index,
               position: "absolute",
               cursor: index === 2 ? "pointer" : "default",
             }}
