@@ -193,10 +193,36 @@ padding: 0.5rem;
 .devider{
   display:flex;
   justify-content: center;
- padding-top: 2rem;
+  padding-top: 2rem;
 }
 .devider-image {
  height: auto;
  width: 25%;
 }
 
+/* Bridal party section Styles */
+#bridal-party-section{
+  padding: 8rem;
+}
+.bridal-party-wrapper{
+ padding-bottom: 8rem;
+}
+.bridal-party-title{
+  font-weight: 400;
+  font-size: 4rem; 
+  padding: 6rem;
+ 
+}
+.bridal-group{
+  display: flex;
+}
+.person-name{
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+.bridal-team-images{
+  border-color: var(--color-accent);
+  border-width: 4px;
+  border-style: solid;
+}
