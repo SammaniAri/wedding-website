@@ -21,7 +21,7 @@ This site was created as a personal frontend development showcase. It replicates
 - **Animation**: [Framer Motion](https://www.framer.com/motion/)
 - **Font**: [Google Fonts - Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
 - **Design Tool**: [Figma](https://figma.com)
-- 
+  
 ---
 
 ## Design Credit
