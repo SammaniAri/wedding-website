@@ -1,0 +1,202 @@
+/* Global Styles */
+:root {
+  --color-background: #f9f9f9;
+  --color-text: #4b2e24;
+  --color-accent: #c6754d;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,body {
+  font-family: 'Playfair Display', serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 6rem; 
+}
+
+.section{
+  height: 1000px;
+}
+/* Header Styles */
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.5rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+ 
+}
+
+.header .logo {
+  width: 80px; 
+  height: auto;
+}
+.nav {
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+  flex-wrap: wrap;
+  gap: 2rem;  
+}
+.header .nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500; 
+  transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Hero section styles */
+.hero-image {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 8rem;
+  
+}
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  padding: 6rem;  
+}
+.hero-text p{
+  color: var(--color-accent);
+  font-size: 1.5rem; 
+}
+
+/* Our story section Styles */
+#our-story{
+width: 100%;
+background-color: var(--color-accent);  
+color: var(--color-background);
+display: flex;
+padding: 8rem;
+}
+.our-story-title{
+  width: 30%;
+  font-weight: 600;
+  font-size: 6rem; 
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.our-story-text{
+  width: 70%;
+  font-size: 1.5rem; 
+}
+.our-story-text p{
+ padding: 1rem
+}
+.our-story-image {
+ height: 1000px;
+ width: 100%;
+ object-fit: cover;
+}
+
+/* venue info section Styles */
+.venue-top{
+width: 100%;
+display: flex;
+padding: 8rem;
+}
+.venue-text{
+  width: 50%; 
+  font-size: 1.5rem; 
+}
+.venue-carousel{
+  width: 50%; 
+  padding:4rem;
+}
+.venue-text p{
+padding: 0.5rem;
+}
+.venue-title{
+  font-weight: 400;
+  font-size: 4rem; 
+}
+.venue-section-name{
+ color: var(--color-accent); 
+}
+
+.carousel-stack {
+  position: relative;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+.carousel-img {
+  position: absolute;
+  height: auto;
+  width:90%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.hotel-section{
+  display: flex;
+  padding: 8rem;
+}
+.hotel{
+  padding: 1rem;
+  margin: 0rem 3rem;
+}
+.hotel-title{
+  font-weight: 200;
+  font-size: 3rem; 
+}
+.hotel-text{
+   font-size: 1.5rem; 
+   padding: 3rem 0rem;
+}
+.button {
+  padding: 1rem 2rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;  
+  color: var(--color-accent);  
+  background-color: transparent;
+  border: 1px solid var(--color-accent);  
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 160px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--color-accent);
+  color: var(--color-background); 
+}
+
+/* devider component Styles */
+.devider{
+  display:flex;
+  justify-content: center;
+ padding-top: 2rem;
+}
+.devider-image {
+ height: auto;
+ width: 25%;
+}
+
