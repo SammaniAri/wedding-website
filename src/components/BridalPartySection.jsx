@@ -53,7 +53,6 @@ const BridalPartySection = () => {
           ))}
         </div>
       </div>
-
       <Devider />
     </div>
   );

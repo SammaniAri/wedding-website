@@ -101,13 +101,17 @@ padding: 8rem;
   display: flex;
   text-align: center;
   flex-direction: column;
+  justify-content: center;
 }
 .our-story-text{
   width: 70%;
   font-size: 1.5rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .our-story-text p{
- padding: 1rem
+ padding: 1rem;
 }
 .our-story-image {
  height: 1000px;
@@ -252,5 +256,6 @@ padding: 0.5rem;
   border-bottom: 2px solid var(--color-accent);
 }
 .bridal-party-button.active {
+  font-weight: 500;
   border-bottom: 2px solid var(--color-accent);
 }
