@@ -4,14 +4,11 @@
   --color-text: #4b2e24;
   --color-accent: #c6754d;
 }
-
 * {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 html,body {
   font-family: 'Playfair Display', serif;
   background-color: var(--color-background);
@@ -24,10 +21,10 @@ h1 {
   font-weight: 600;
   font-size: 6rem; 
 }
-
 .section{
   height: 1000px;
 }
+
 /* Header Styles */
 .header {
   width: 100%;
@@ -39,9 +36,7 @@ h1 {
   position: sticky;
   top: 0;
   z-index: 1000;
- 
 }
-
 .header .logo {
   width: 80px; 
   height: auto;
@@ -59,7 +54,6 @@ h1 {
   font-weight: 500; 
   transition: color 0.3s ease;
 }
-
 .header .nav a:hover {
   color: var(--color-accent);
 }
@@ -71,7 +65,6 @@ h1 {
   display: flex;
   align-items: center;
   padding-bottom: 8rem;
-  
 }
 .hero-text{
   display: flex;
@@ -101,13 +94,17 @@ padding: 8rem;
   display: flex;
   text-align: center;
   flex-direction: column;
+  justify-content: center;
 }
 .our-story-text{
   width: 70%;
   font-size: 1.5rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .our-story-text p{
- padding: 1rem
+ padding: 1rem;
 }
 .our-story-image {
  height: 1000px;
@@ -139,13 +136,11 @@ padding: 0.5rem;
 .venue-section-name{
  color: var(--color-accent); 
 }
-
 .carousel-stack {
   position: relative;
   margin: 0 auto;
   min-height: 500px;
 }
-
 .carousel-img {
   position: absolute;
   height: auto;
@@ -156,6 +151,7 @@ padding: 0.5rem;
 .hotel-section{
   display: flex;
   padding: 8rem;
+  height: 600px;
 }
 .hotel{
   padding: 1rem;
@@ -183,7 +179,6 @@ padding: 0.5rem;
   text-decoration: none;
   text-align: center;
 }
-
 .button:hover {
   background-color: var(--color-accent);
   color: var(--color-background); 
@@ -193,10 +188,130 @@ padding: 0.5rem;
 .devider{
   display:flex;
   justify-content: center;
- padding-top: 2rem;
+  padding-top: 2rem;
 }
 .devider-image {
  height: auto;
  width: 25%;
 }
 
+/* Bridal party section Styles */
+#bridal-party-section{
+  padding: 8rem;
+}
+.bridal-party-wrapper{
+ padding-bottom: 8rem;
+}
+.bridal-party-title{
+  font-weight: 400;
+  font-size: 4rem; 
+  padding: 6rem;
+}
+.bridal-group{
+  display: flex;
+}
+.person-name{
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+.bridal-team-images{
+  border-color: var(--color-accent);
+  border-width: 4px;
+  border-style: solid;
+}
+.button-set{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  justify-content: center;
+}
+.bridal-party-button{
+  border: none;
+  padding: 1rem 1rem;
+  margin: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;  
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+  display: inline-block;
+  text-align: center; 
+}
+.bridal-party-button:hover {
+  border-bottom: 2px solid var(--color-accent);
+}
+.bridal-party-button.active {
+  font-weight: 500;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* Itinerary section Styles */
+#itinerary{
+  padding: 0rem 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.itinerary-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itinerary-title{
+  font-weight: 400;
+  font-size: 4rem; 
+  padding: 4rem;
+  text-align: center;
+}
+.tablist{
+  display: flex;
+}
+.tab{
+  border: none;
+  padding: 1rem 1rem;
+  margin: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;  
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+  display: inline-block;
+  text-align: center; 
+}
+.tab:hover {
+  border-bottom: 2px solid var(--color-accent);
+}
+.tab.active {
+  font-weight: 500;
+  border-bottom: 2px solid var(--color-accent);
+}
+.timeline-rows{
+  padding: 8rem;
+  width: 75%;
+}
+.timeline-row{
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding-bottom: 6rem;
+}
+.time{
+  width: 400px;
+}
+.activity-title{
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.time{
+    font-size: 2rem;
+    color: var(--color-accent); 
+}
+.activity-description{
+    font-size: 1.5rem; 
+}
