@@ -315,3 +315,40 @@ padding: 0.5rem;
 .activity-description{
     font-size: 1.5rem; 
 }
+
+/* Registry section Styles */
+#registry{
+  padding: 0rem 8rem;
+}
+.registry-brand-image{
+  width: 200px;
+}
+.registry-container{
+  display: flex;
+}
+.registry-description{
+  width: 50%;
+  padding: 1rem;
+}
+.registry-logos{
+  width: 50%;
+  padding: 1rem;
+}
+.registry-title{
+  font-weight: 400;
+  font-size: 4rem;
+  padding:2rem 0rem;
+  text-align:left
+}
+.registry-description{
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 4rem;
+  text-align:left
+}
+.registry-logos{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem;
+}
