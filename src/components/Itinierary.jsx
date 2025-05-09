@@ -1,30 +1,10 @@
-import React from 'react'
+/** @format */
 
-const day1info = [
-  {
-    id: 1,
-    time: "Time 1",
-    title: "Activity title 1",
-    description:
-      "Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi. Ut in eget leo dui nunc. Tortor viverra magna dignissim sit. Libero eu euismod risus, mauris etiam ut morbi amet in. Tortor duis dignissim adipiscing sem.",
-  },
-  {
-    id: 2,
-    time: "Time 2",
-    title: "Activity title 2",
-    description:
-      "Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi. Ut in eget leo dui nunc. Tortor viverra magna dignissim sit. Libero eu euismod risus, mauris etiam ut morbi amet in. Tortor duis dignissim adipiscing sem.",
-  },
-  {
-    id: 3,
-    time: "Time 3",
-    title: "Activity title 3",
-    description:
-      "Phasellus accumsan neque viverra ut sem aliquam purus rhoncus, morbi. Ut in eget leo dui nunc. Tortor viverra magna dignissim sit. Libero eu euismod risus, mauris etiam ut morbi amet in. Tortor duis dignissim adipiscing sem.",
-  },
-];
+import { React, useState } from "react";
+import { day1info, day2info, day3info } from "../data/itineraryData";
 
 const Itinierary = () => {
+  const [clickedDateInfo, setClickedDateInfo] = useState(day1info);
   return (
     <div
       id="itinerary"
@@ -33,12 +13,27 @@ const Itinierary = () => {
       <div className="itinerary-container">
         <div className="itinerary-title">Itinerary</div>
         <div className="tablist">
-          <button className="tab">day 1</button>
-          <button className="tab">day 2</button>
-          <button className="tab">day 3</button>
+          <button
+            className="tab"
+            onClick={() => setClickedDateInfo(day1info)}
+          >
+            day 1
+          </button>
+          <button
+            className="tab"
+            onClick={() => setClickedDateInfo(day2info)}
+          >
+            day 2
+          </button>
+          <button
+            className="tab"
+            onClick={() => setClickedDateInfo(day3info)}
+          >
+            day 3
+          </button>
         </div>
         <div className="timeline-rows">
-          {day1info.map((item) => {
+          {clickedDateInfo.map((item) => {
             return (
               <div
                 className="timeline-row"
@@ -58,4 +53,4 @@ const Itinierary = () => {
   );
 };
 
-export default Itinierary
+export default Itinierary;
