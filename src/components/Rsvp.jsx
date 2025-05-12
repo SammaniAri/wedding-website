@@ -5,9 +5,7 @@ const Rsvp = () => {
     <div
       id="rsvp"
       className="section"
-    >
-      Rsvp
-    </div>
+    ></div>
   );
 }
 
